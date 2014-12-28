@@ -1,4 +1,4 @@
 werwolves-online
 ================
 
-A browser version of "Die Werwölfe von Dunkelwald"
+A browser version of "Die Werwölfe von Düsterwald"
