@@ -12,12 +12,18 @@ class Content
 	private function getContent()
 	{
 		
-		if ($_SESSION['userOnline'] === true)
+		if ($_SESSION['userOnline'] === true && $_GET['action'] !== "" && $_GET['action'] !== "login")
 		{
-			/*
-			 *
-			 * 			 
-			 */
+			$action = $_GET['action'];
+			if ($action == 'dashboard')
+			{
+				require_once('dashboard.php');
+			}
+			
+			if ($action == 'settings')
+			{
+				require_once('settings.php');
+			}
 		}
 		else if ($_SESSION['userOnline'] === false && $_GET['action'] !== "login")
 		{
